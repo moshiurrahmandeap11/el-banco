@@ -99,6 +99,7 @@
           </div>
           <!-- box 5 -->
           <div
+            id="pay-bill-box"
             class="box border-1 border-black p-4 text-center rounded-lg shadow-lg hover:shadow-2xl focus:border-2"
             tabindex="0"
           >
@@ -446,6 +447,78 @@
           </div>
         </section>
         <!-- pay bill section -->
+        <section id="paybill" class="mt-14">
+          <h2 class="text-black font-bold">Pay Bill</h2>
+          <!-- pay bill -->
+          <div class="">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <legend>Select To pay</legend>
+                  <select class="select w-full max-w-xs">
+                    <option disabled selected>Select bank</option>
+                    <option value="Bkash">Bkash</option>
+                    <option value="Nagad">Nagad</option>
+                    <option value="Rocket">Rocket</option>
+                    <option value="Celfin">Celfin</option>
+                    <option value="Upay">Upay</option>
+                    <option value="SureCash">SureCash</option>
+                  </select>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Biller Account Number</span>
+                    </label>
+                    <input
+                      value="01234567891"
+                      id="paybill-number"
+                      type="number"
+                      placeholder="account number"
+                      class="input input-bordered"
+                      required
+                    />
+                  </div>
+                  <!-- amount -->
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Amount To Pay</span>
+                    </label>
+                    <input
+                      value="100000"
+                      id="paybill-amount"
+                      type="number"
+                      placeholder="account number"
+                      class="input input-bordered"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">PIN</span>
+                    </label>
+                    <input
+                      value="1234"
+                      id="paybill-pin"
+                      type="password"
+                      placeholder="pin number"
+                      class="input input-bordered"
+                      required
+                    />
+                    <label class="label">
+                      <a href="#" class="label-text-alt link link-hover"
+                        >Forgot password?</a
+                      >
+                    </label>
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="paybill-btn" class="btn btn-primary">
+                      Pay Now
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
         <!-- transaction history section -->
         <section id="transaction-history" class="mt-14">
           <h2 class="text-black font-bold">Transaction History</h2>
@@ -548,5 +621,6 @@
     <script src="./script/cashout.js"></script>
     <script src="./script/transfer-money.js"></script>
     <script src="./script/getbonus.js"></script>
+    <script src="./script/paybill.js"></script>
   </body>
 </html>
