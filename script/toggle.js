@@ -40,3 +40,15 @@ getBonus.addEventListener('click', function(event){
   document.getElementById("transfer-money").style.display = "none";
   document.getElementById('getbonus').style.display='block'
 })
+
+
+const transactionHistory = document.getElementById("transaction-history-box");
+transactionHistory.addEventListener('click', function(event){
+  event.preventDefault()
+  document.getElementById("addmoney").style.display = "none";
+  document.getElementById("cashout").style.display = "none";
+  document.getElementById("transfer-money").style.display = "none";
+  document.getElementById("getbonus").style.display = "none";
+  document.getElementById("latest-history").style.display = "none";
+
+})
